@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamSanhealthcare - Health & Wellness</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed; 
+            background-size: cover; 
+            color: #fff; /* لجعل النص أبيض ليتناسب مع الخلفية */
+            position: relative;
+        }
+
+        /* إضافة طبقة شفافة فوق الخلفية */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* اللون الأسود بنسبة شفافية 50% */
+            z-index: -1;
+        }
+
+        header {
+            background: rgba(0, 123, 255, 0.8); /* لون شفاف للهيدر */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* ستارة About Us */
+        .about-banner {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 60px 20px;
+            text-align: center;
+            backdrop-filter: blur(5px);
+            border-top: 2px solid #ffffff30;
+            border-bottom: 2px solid #ffffff30;
+        }
+
+        .about-banner h2 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .about-banner p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: rgba(255, 255, 255, 0.9); /* صندوق المنتج بخلفية شبه شفافة */
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product h2 {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            color: #007bff;
+        }
+
+        .contact {
+            background: rgba(0, 123, 255, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .product {
+                width: 90%;
+            }
+
+            .products {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SamSanhealthcare</h1>
+        <p>Your Trusted Partner in Health & Wellness</p>
+    </header>
+    
+    <!-- ستارة About Us -->
+    <section class="about-banner">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>At SamSanhealthcare, we are committed to producing high-quality health products that support your well-being. 
+            Our supplements are scientifically formulated to enhance immunity, energy, and overall health — all while ensuring safety, 
+            quality, and transparency.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="sam-nerve-health.jpg" alt="SAM NERVE HEALTH">
+            <h2>SAM NERVE HEALTH</h2>
+        </div>
+        <div class="product">
+            <img src="sam-gray.jpg" alt="SAM-GRAY">
+            <h2>SAM-GRAY</h2>
+        </div>
+        <div class="product">
+            <img src="sam-collagen.jpg" alt="SAM COLLAGEN">
+            <h2>SAM COLLAGEN</h2>
+        </div>
+        <div class="product">
+            <img src="sam-q10.jpg" alt="SAM Q-10">
+            <h2>SAM Q-10</h2>
+        </div>
+        <div class="product">
+            <img src="sam-joint-flex.jpg" alt="SAM JOINT-FLEX">
+            <h2>SAM JOINT-FLEX</h2>
+        </div>
+        <div class="product">
+            <img src="sam-vitamin-d.jpg" alt="SAM VITAMIN-D">
+            <h2>SAM VITAMIN-D</h2>
+        </div>
+        <div class="product">
+            <img src="sam-feero.jpg" alt="SAM FEERO">
+            <h2>SAM FEERO</h2>
+        </div>
+        <div class="product">
+            <img src="sam-triple-omega.jpg" alt="SAM TRIPLE OMEGA">
+            <h2>SAM TRIPLE OMEGA</h2>
+        </div>
+        <div class="product">
+            <img src="sam-calcium-d3.jpg" alt="SAM CALCIUM + D3">
+            <h2>SAM CALCIUM + D3</h2>
+        </div>
+    </section>
+
+    <footer class="contact">
+        <p>Contact Us:</p>
+        <p>📞 <a href="tel:+963991569805">+963991569805</a></p>
+        <p>📧 <a href="mailto:info@samsanhealthcare.com">info@samsanhealthcare.com</a></p>
+        <p>💬 <a href="https://wa.me/963991569805">WhatsApp</a></p>
+        <p>🔗 <a href="https://www.facebook.com/profile.php?id=61573880503144">Facebook</a></p>
+        <p>&copy; 2025 SamSanhealthcare. All rights reserved.</p>
+    </footer>
+</body>
+</html>
